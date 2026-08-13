@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { LogOut, Calculator, Zap, Layer, DollarSign, Sparkles } from 'lucide-react';
+import { LogOut, Calculator, Zap, Layers, DollarSign, Sparkles } from 'lucide-react';
 
 const TARIF_LISTRIK = {
   '900 VA (RTM)': 1352, '1.300 VA': 1444.7, '2.200 VA': 1444.7, '3.500 VA - 5.500 VA': 1699.53
@@ -67,7 +67,7 @@ export default function Dashboard() {
           </div>
 
           <form onSubmit={hitungBiaya} className="bg-gray-900 p-6 rounded-2xl border border-gray-800 space-y-4">
-            <h3 className="text-base font-semibold text-gray-300 flex items-center gap-2"><Layer size={18} className="text-blue-400" /> Data Projek Cetak</h3>
+            <h3 className="text-base font-semibold text-gray-300 flex items-center gap-2"><Layers size={18} className="text-blue-400" /> Data Projek Cetak</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs text-gray-400 mb-1">Nama Project</label>
