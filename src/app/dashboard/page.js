@@ -168,11 +168,11 @@ export default function Dashboard() {
             )}
           </div>
           
-{hasil && ( Rekomendasi Harga Jual ({marginProfit}%){formatRupiah(hasil.jual)}
-
-
+{hasil && (
+  <div className="mt-8 p-4 bg-purple-950/40 rounded-xl border border-purple-800/50">
+    <span className="text-xs text-purple-300 block mb-1 font-medium flex items-center gap-1">
+      <Sparkles size={12}/> Rekomendasi Harga Jual ({marginProfit}%)
+    </span>
+    <span className="text-2xl font-bold text-purple-400">{formatRupiah(hasil.jual)}</span>
+  </div>
 )}
-
-);
-
-}
